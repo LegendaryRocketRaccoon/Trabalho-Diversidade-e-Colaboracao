@@ -594,9 +594,9 @@
         <span class="nav-dot active" data-section="Início" onclick="scrollToSection('header')"></span>
         <span class="nav-dot" data-section="Dados" onclick="scrollToSection('stats')"></span>
         <span class="nav-dot" data-section="Introdução" onclick="scrollToSection('intro')"></span>
-        <span class="nav-dot" data-section="Cidade" onclick="scrollToSection('cidade')"></span>
-        <span class="nav-dot" data-section="Escola" onclick="scrollToSection('escola')"></span>
-        <span class="nav-dot" data-section="Evento" onclick="scrollToSection('evento')"></span>
+        <span class="nav-dot" data-section="Cidade do Futuro Sustentável" onclick="scrollToSection('cidade')"></span>
+        <span class="nav-dot" data-section="A Escola Perfeita para Jovens Aprendizes" onclick="scrollToSection('escola')"></span>
+        <span class="nav-dot" data-section="O Evento Inclusivo" onclick="scrollToSection('evento')"></span>
         <span class="nav-dot" data-section="Conclusão" onclick="scrollToSection('conclusao')"></span>
     </div>
 
@@ -702,7 +702,7 @@
 
         <!-- Desafio 1: Cidade do Futuro -->
         <section id="cidade" class="section">
-            <h2><span class="section-icon">🏙️</span> Projeto Cidade Inteligente e Inclusiva 2050</h2>
+            <h2><span class="section-icon">🏙️</span> Projeto Cidade Inteligente e Inclusiva</h2>
             
             <div class="challenge">
                 <div class="challenge-problem">
@@ -783,7 +783,7 @@
 
         <!-- Desafio 2: Escola do Futuro -->
         <section id="escola" class="section">
-            <h2><span class="section-icon">🏫</span> Escola Inovadora e Inclusiva 2050</h2>
+            <h2><span class="section-icon">🏫</span> Escola Inovadora e Inclusiva</h2>
             
             <div class="challenge">
                 <div class="challenge-problem">
@@ -870,7 +870,75 @@
                             <li>Parcerias com escolas, ONGs e startups locais</li>
                             <li>Plataformas digitais para feedback e sugestões em tempo real</li>
                         </ul>
+                    </div>                      
+                </div>                                             
+            </div>
+
+                                                     
+            <section id="conclusao" class="conclusion">
+            <div class="conclusion-content">
+                <h2>💡 Conclusão</h2>
+                
+                <div class="conclusion-points">
+                    <div class="conclusion-point">
+                        <h4>🌍 Diversidade como Estratégia</h4>
+                        <p>Organizações e sociedades que valorizam múltiplas perspectivas alcançam inovação, maior rentabilidade e coesão social.</p>
+                    </div>
+                    <div class="conclusion-point">
+                        <h4>🤝 Colaboração Eficiente</h4>
+                        <p>Transformar diferenças individuais em soluções coletivas aumenta a capacidade de resolver problemas complexos e promove inclusão real.</p>
+                    </div>
+                    <div class="conclusion-point">
+                        <h4>🚀 Inovação e Sustentabilidade</h4>
+                        <p>Projetos que integram tecnologia, diversidade e sustentabilidade garantem impacto positivo duradouro e replicabilidade em diferentes contextos.</p>
                     </div>
                 </div>
+
+                <div class="impact-quote">
+                    "Nothing truly valuable can be achieved except by the unselfish cooperation of many individuals." - Albert Einstein
+                </div>
+                                                                                                                     
+                     <div class="impact-quote">
+                    "Nada verdadeiramente valioso pode ser alcançado, exceto pela cooperação altruísta de muitos indivíduos." - Albert Einstein
+                </div>
             </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2 class="cta-title">Como Ser Parte da Transformação</h2>
+            <p class="cta-text">Aplique os princípios de diversidade e colaboração em sua comunidade, empresa ou projeto. Comece hoje a criar soluções inclusivas, sustentáveis e inovadoras.</p>
+            
+            <div class="next-steps">
+                <div class="step-item">📝 Realizando workshops de diversidade e inclusão</div>
+                <div class="step-item">💡 Desenvolvendo projetos colaborativos em equipe</div>
+                <div class="step-item">🌱 Promovendo ações sustentáveis e responsáveis</div>
+                <div class="step-item">🤝 Conectando-se com comunidades e parceiros locais</div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Progress Bar
+        const progressBar = document.getElementById('progressBar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrolled = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Scroll to section via nav dots
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+            const dots = document.querySelectorAll('.nav-dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>                                    
         </section>
